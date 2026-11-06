@@ -7,7 +7,7 @@ import { Notifications } from "@mantine/notifications";
 import PwaRegister from "@/components/PwaRegister";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://memoria-neon.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   title: {
     default: "Memória Neon — Jogo da Memória",
     template: "%s | Memória Neon",
